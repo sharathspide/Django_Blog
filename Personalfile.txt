@@ -25,3 +25,16 @@ $ python manage.py startapp BloggerNetwork
 Migrate the models to the server
 $ python manage.py makemigrations
 $ python manage.py migrate
+
+
+
+How to raise the MR: 
+check the info in the branch.txt file 
+1. point to the develop branch 
+2. create a new Branch from develop with the name CMT-"commit Number" eg: CMT-3 
+3. do the required changes on the files 
+4. commit the changes and push the changes to the develop branch
+5. Create the Merge Request and wait for it to be merged.
+6. once the MR is merged to the develop branch delete the source branch 
+7. also to have a track of the branches we are working on I have created the file name Branch Details.
+8. update the file with the last Commit number eg: CMT-3 
