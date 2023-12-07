@@ -1,3 +1,10 @@
+{%extends 'StaticPage.html'%} {% block content %}
+<!-- {%block title%} {{post.page_title}}
+{%endblock%} -->
+<!-- here in the above line it still mentions the title even though it is commented
+but when it is not commented it is displaying the title -->
+<br />
+<br />
 <h1>Post - {{post.title}}</h1>
 <small>BY: {{post.author.first_name}} {{post.author.last_name}}</small>
 <hr />
@@ -5,4 +12,7 @@
 <p>{{post.body}}</p>
 
 <br /><br />
-<button><a href="{% url 'Home' %}">BACK to HOME</a></button>
+
+<a class="btn btn-dark" href="{% url 'Home' %}">BACK to HOME</a>
+<!-- <button type="button" class="btn btn-dark" href="{% url 'Home' %}">Dark</button> -->
+{%endblock%}
