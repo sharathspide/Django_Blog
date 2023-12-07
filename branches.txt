@@ -1,0 +1,11 @@
+Main  -  has the old version of the blog 
+Develop - it is the development process for the current version 
+
+CMT-3 - means Commit followed by the commit number
+
+
+**Need to be update by the developer**
+Previous commit number - CMT-3
+Current Commit number - CMT-4 
+Next commit number should be - CMT-5 
+new Branch name from develop - CMT-5 
