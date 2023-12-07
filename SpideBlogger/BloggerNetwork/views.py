@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
+from .forms import PostForms
 #All of our blog post - ListView
 #retrieve the single blog post -DetailView
 
@@ -11,6 +12,13 @@ class HomeView (ListView):
     model = Post
     template_name = 'Home.html'
 
-class PostDetail (DetailView):
+class PostDetailView (DetailView):
     model = Post
     template_name = 'Post_Detail.html'
+
+class CreatePostview (CreateView):
+    model = Post
+    form_class = PostForms
+    template_name = 'AddPost.html'
+    #fields = '__all__'
+    #fields = ('title', 'body')
